@@ -64,5 +64,8 @@ app.post("/edit/:id", async (req, res) => {
 app.get("/", (req, res) => {
   return res.json("api is running");
 });
+app.get("/about", (req, res) => {
+  return res.json("about is running");
+});
 
 app.listen(3000, () => console.log("Server Up and running"));
