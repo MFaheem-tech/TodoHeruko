@@ -4,10 +4,13 @@ const TodoTask = require("./models/todoModel");
 const app = express();
 
 mongoose
-  .connect("mongodb://0.0.0.0:27017/Todolistdatabase", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://faheeem123:faheeem123@todocluster.yung6.mongodb.net/Todolistdatabase",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => console.log("Connection succeccful"))
   .catch((err) => console.log(err));
 
