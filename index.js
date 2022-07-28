@@ -66,7 +66,7 @@ app.get("/", (req, res) => {
   return res.json("api is running");
 });
 app.get("/about", (req, res) => {
-  return res.json("about is running");
+  return res.send("about is running");
 });
 
 app.listen(port, () => console.log("Server Up and running"));
