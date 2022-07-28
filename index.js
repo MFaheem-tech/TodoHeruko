@@ -4,7 +4,7 @@ const TodoTask = require("./models/todoModel");
 const app = express();
 
 mongoose
-  .connect("mongodb://localhost:27017/Todolistdatabase", {
+  .connect("mongodb://0.0.0.0:27017/Todolistdatabase", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
