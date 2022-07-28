@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const TodoTask = require("./models/todoModel");
 const app = express();
+var port = process.env.PORT || 3000;
 
 mongoose
   .connect(
@@ -68,4 +69,4 @@ app.get("/about", (req, res) => {
   return res.json("about is running");
 });
 
-app.listen(3000, () => console.log("Server Up and running"));
+app.listen(port, () => console.log("Server Up and running"));
